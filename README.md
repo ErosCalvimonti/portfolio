@@ -3,7 +3,6 @@
 [![LinkedIn](https://img.shields.io/badge/-LinkedIn-0077B5?style=flat&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/eroscalvimonti/)
 [![GitHub](https://img.shields.io/badge/-GitHub-181717?style=flat&logo=github)](https://github.com/ErosCalvimonti)
 
-![QA Engineer Banner](https://i.imgur.com/YT1Eeqh.png)
 
 ## 👋 About Me
 
