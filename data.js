@@ -24,6 +24,15 @@ const projects = [
         image: "https://i.postimg.cc/rF5RX63V/Screenshot-2024-09-04-at-3-31-42-PM.jpg",
         tags: ["Java", "Selenium WebDriver", "Cucumber", "Gradle"],
         link: "https://github.com/ErosCalvimonti/Java-Selenium-Automation"
+    }, {
+        title: { en: "Cypress Project | Framework Test Automation", es: "Proyecto Cypress | Framework Automatización de pruebas" },
+        description: {
+            en: "This project contains an end-to-end (E2E) testing framework for the Open Cart e-commerce provide by Abstracta using Cypress and Cucumber. It provides a robust solution for automating UI tests",
+            es: "Este proyecto contiene un marco de pruebas de (E2E) para el comercio electrónico Open Cart proporcionado por Abstracta utilizando Cypress y Cucumber. Proporciona una solución robusta para automatizar las pruebas de interfaz de usuario"
+        },
+        image: "https://i.postimg.cc/WzPBwvmw/Screenshot-2024-09-20-at-12-05-41-PM-Large.jpg",
+        tags: ["Cypress", "E2E Testing", "BDD", "Data Driven Testing"],
+        link: "https://github.com/ErosCalvimonti/cypress-project"
     },
     {
         title: { en: "Book it!", es: "¡Book it!" },
@@ -45,16 +54,7 @@ const projects = [
         tags: ["HTML", "JavaScript", "CSS", "Responsive Design"],
         link: "https://eroscalvimonti.github.io/swipe-web/"
     },
-    {
-        title: { en: "Cypress Project | Framework Test Automation", es: "Proyecto Cypress | Framework Automatización de pruebas" },
-        description: {
-            en: "This project contains an end-to-end (E2E) testing framework for the Open Cart e-commerce provide by Abstracta using Cypress and Cucumber. It provides a robust solution for automating UI tests, ensuring the reliability and functionality of the Open Cart system.",
-            es: "Este proyecto contiene un marco de pruebas de (E2E) para el comercio electrónico Open Cart proporcionado por Abstracta utilizando Cypress y Cucumber. Proporciona una solución robusta para automatizar las pruebas de interfaz de usuario, garantizando la fiabilidad y funcionalidad del sistema Open Cart."
-        },
-        image: "https://i.postimg.cc/WzPBwvmw/Screenshot-2024-09-20-at-12-05-41-PM-Large.jpg",
-        tags: ["Cypress", "E2E Testing", "BDD", "Data Driven Testing"],
-        link: "https://github.com/ErosCalvimonti/cypress-project"
-    }
+   
 ];
 
 const translations = {
