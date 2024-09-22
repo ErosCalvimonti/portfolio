@@ -27,8 +27,8 @@ const projects = [
     }, {
         title: { en: "Cypress Project | Framework Test Automation", es: "Proyecto Cypress | Framework Automatización de pruebas" },
         description: {
-            en: "This project contains an end-to-end (E2E) testing framework for the Open Cart e-commerce provide by Abstracta using Cypress and Cucumber. It provides a robust solution for automating UI tests",
-            es: "Este proyecto contiene un marco de pruebas de (E2E) para el comercio electrónico Open Cart proporcionado por Abstracta utilizando Cypress y Cucumber. Proporciona una solución robusta para automatizar las pruebas de interfaz de usuario"
+            en: "This project contains an end-to-end (E2E) testing framework for the Open Cart e-commerce provide by Abstracta using Cypress and Cucumber.",
+            es: "Este proyecto contiene un marco de pruebas de (E2E) para el comercio electrónico Open Cart proporcionado por Abstracta utilizando Cypress y Cucumber."
         },
         image: "https://i.postimg.cc/WzPBwvmw/Screenshot-2024-09-20-at-12-05-41-PM-Large.jpg",
         tags: ["Cypress", "E2E Testing", "BDD", "Data Driven Testing"],
