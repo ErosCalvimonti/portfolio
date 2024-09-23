@@ -10,7 +10,7 @@
 .gradient-light { background: linear-gradient(to right, #e0eafc, #cfdef3); }
 .project-card { transition: transform 0.3s ease-in-out; overflow: hidden; }
 .project-card:hover { transform: translateY(-10px); }
-.project-card .project-details { transition: transform 0.3s ease-in-out; transform: translateY(100%); }
+.project-card .project-details { transition: transform 0.3s ease-in-out; transform: translateY(140%); }
 .project-card:hover .project-details { transform: translateY(0); }
 .testing-background {
     position: absolute;
