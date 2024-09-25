@@ -208,9 +208,9 @@ z"/>
                     <h3 class="text-4xl text-green-400">${t.role}</h3>
                     <p class="text-xl">${t.subtitle}</p>
                     <div class="flex space-x-4 pt-4">
-                        <a href="https://drive.google.com/uc?export=download&id=1Yy_gyyoUqvvhqN40c6N9Y2LvUmhGH0ru" class="bg-green-400 text-gray-900 px-6 py-2 rounded hover:bg-green-500 transition duration-300">${t.getResume}</a>
+                        <a href="https://drive.google.com/uc?export=download&id=1YZPo7qQ-R-acvLar2qrvBU2DT8jOR_bD" class="bg-green-400 text-gray-900 px-6 py-2 rounded hover:bg-green-500 transition duration-300">${t.getResume}</a>
                         <a href="#about" class="border border-green-400 text-green-400 px-6 py-2 rounded hover:bg-green-400 hover:text-gray-900 transition duration-300">${t.aboutMe}</a>
-                    </div>
+                    </div> 
                 </div>
             </section>
 
