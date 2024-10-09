@@ -24,11 +24,9 @@ When I'm not hunting bugs or optimizing test processes, you can find me:
   <img src="https://img.shields.io/badge/-Selenium-43B02A?style=for-the-badge&logo=Selenium&logoColor=white" alt="Selenium"/>
   <img src="https://img.shields.io/badge/-Cypress-17202C?style=for-the-badge&logo=cypress&logoColor=white" alt="Cypress"/>
   <img src="https://img.shields.io/badge/-Cucumber-23D96C?style=for-the-badge&logo=cucumber&logoColor=white" alt="Cucumber"/>
-  <img src="https://img.shields.io/badge/-REST%20Assured-008CBA?style=for-the-badge" alt="REST Assured"/>
   <img src="https://img.shields.io/badge/-Jenkins-D24939?style=for-the-badge&logo=Jenkins&logoColor=white" alt="Jenkins"/>
   <img src="https://img.shields.io/badge/-JIRA-0052CC?style=for-the-badge&logo=Jira&logoColor=white" alt="JIRA"/>
   <img src="https://img.shields.io/badge/-Postman-FF6C37?style=for-the-badge&logo=Postman&logoColor=white" alt="Postman"/>
-  <img src="https://img.shields.io/badge/-TestNG-007396?style=for-the-badge" alt="TestNG"/>
   <img src="https://img.shields.io/badge/-GitHub%20Actions-2088FF?style=for-the-badge&logo=GitHub-Actions&logoColor=white" alt="GitHub Actions"/>
 </p>
 
