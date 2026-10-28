@@ -1,69 +1,32 @@
-# Calvimonti Eros - Software QA Engineer 🚀
+# Eros Calvimonti · Portfolio
 
-[![LinkedIn](https://img.shields.io/badge/-LinkedIn-0077B5?style=flat&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/eroscalvimonti/)
-[![GitHub](https://img.shields.io/badge/-GitHub-181717?style=flat&logo=github)](https://github.com/ErosCalvimonti)
+[![CI](https://github.com/ErosCalvimonti/portfolio/actions/workflows/ci.yml/badge.svg)](https://github.com/ErosCalvimonti/portfolio/actions/workflows/ci.yml)
 
+Personal site of a QA Automation Engineer / SDET: **https://eroscalvimonti.github.io/portfolio/** ([español](https://eroscalvimonti.github.io/portfolio/es/)).
 
-## 👋 About Me
+Static HTML and CSS, no framework. The content of both languages lives in `content.mjs`; `build.mjs` generates `index.html` and `es/index.html`, which GitHub Pages serves as they are. JavaScript only adds the theme toggle; without it the site still renders completely.
 
-Hello! I'm Calvimonti Eros, a passionate Software QA Engineer dedicated to ensuring top-notch software quality. With a keen eye for detail and a love for problem-solving, I specialize in:
+## Tested like a product
 
-- 🔍 QA Automation
-- 🖥️ Manual Testing
-- 📊 QA Analysis
+Every push runs a Playwright suite (desktop and mobile) on GitHub Actions:
 
-When I'm not hunting bugs or optimizing test processes, you can find me:
+- **Accessibility**: axe-core, WCAG 2.1 AA, in light and dark mode
+- **Broken links**: in-page anchors, local assets, the CV download and every external link (it also runs weekly so links that die get caught)
+- **Layout**: no horizontal scroll on mobile
+- **Progressive enhancement**: all content is present with JavaScript disabled
+- **Behavior**: language switch, persistent theme toggle, no console errors
+- **Consistency**: CI fails if the committed HTML doesn't match `content.mjs`
 
-- 🎸 Playing guitar and enjoying music
-- 👨‍👩‍👧‍👦 Spending quality time with my family
-- 📚 Reading about the latest tech trends
+## Editing
 
-## 🛠️ Skills & Expertise
+```bash
+npm ci
+npx playwright install chromium
+# edit content.mjs, then:
+npm run build
+npm test
+```
 
-<p align="center">
-  <img src="https://img.shields.io/badge/-Selenium-43B02A?style=for-the-badge&logo=Selenium&logoColor=white" alt="Selenium"/>
-  <img src="https://img.shields.io/badge/-Cypress-17202C?style=for-the-badge&logo=cypress&logoColor=white" alt="Cypress"/>
-  <img src="https://img.shields.io/badge/-Cucumber-23D96C?style=for-the-badge&logo=cucumber&logoColor=white" alt="Cucumber"/>
-  <img src="https://img.shields.io/badge/-Jenkins-D24939?style=for-the-badge&logo=Jenkins&logoColor=white" alt="Jenkins"/>
-  <img src="https://img.shields.io/badge/-JIRA-0052CC?style=for-the-badge&logo=Jira&logoColor=white" alt="JIRA"/>
-  <img src="https://img.shields.io/badge/-Postman-FF6C37?style=for-the-badge&logo=Postman&logoColor=white" alt="Postman"/>
-  <img src="https://img.shields.io/badge/-GitHub%20Actions-2088FF?style=for-the-badge&logo=GitHub-Actions&logoColor=white" alt="GitHub Actions"/>
-</p>
+To update the CV, replace `assets/Eros-Calvimonti-CV.pdf`.
 
-### 🏆 Key Competencies
-
-- 🐞 **Bug Reporting**: Providing precise and actionable bug reports for efficient resolution.
-- 🤖 **QA Automation**: Implementing robust automated testing solutions for web and mobile applications.
-- 🔌 **API Testing**: Conducting thorough API tests to ensure reliability and functionality.
-- ⚡ **Performance Testing**: Assessing application performance to identify and resolve bottlenecks.
-
-## 🚀 Projects
-
-Here are some of my notable projects:
-
-1. [Swipe Web Responsive](https://eroscalvimonti.github.io/swipe-web/)
-   - A fully responsive website showcasing products and services.
-   - Technologies: HTML, JavaScript, CSS
-
-2. [Book it!](https://eroscalvimonti.github.io/book-it/)
-   - A responsive hotel booking site with dynamic listings and API integration.
-   - Technologies: DOM Manipulation, JavaScript, CSS, API requests
-
-3. [Automated Testing Suite](https://github.com/ErosCalvimonti/Java-Selenium-Automation)
-   - A comprehensive suite for automated browser testing and BDD.
-   - Technologies: Java, Selenium WebDriver, Cucumber, Gradle
-
-
-## 📫 Let's Connect!
-
-I'm always excited to collaborate on new projects or discuss the latest in QA and software testing. Feel free to reach out!
-
-- 📧 Email: [karielcode@gmail.com](mailto:karielcode@gmail.com)
-- 💼 LinkedIn: [Calvimonti Eros](https://www.linkedin.com/in/eroscalvimonti/)
-- 🐱 GitHub: [@ErosCalvimonti](https://github.com/ErosCalvimonti)
-
----
-
-<p align="center">
-  <img src="https://img.shields.io/badge/Thanks%20for%20visiting!-😊-brightgreen" alt="Thanks Badge"/>
-</p>
+The 2024 version of the site is kept in the `legacy-2024` branch and tag `v1-legacy-2024`.
