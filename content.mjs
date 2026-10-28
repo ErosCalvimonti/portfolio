@@ -13,6 +13,7 @@ export const site = {
 
 const quickpizzaRepo = "https://github.com/ErosCalvimonti/playwright-k6-quickpizza";
 const ordenarsRepo = "https://github.com/ErosCalvimonti/OrdenARS";
+const ordenarsE2eRepo = "https://github.com/ErosCalvimonti/ordenars-e2e";
 
 const skillGroups = (labels) => [
   { label: labels[0], items: ["Playwright", "Cypress", "Selenium", "Appium", "WebdriverIO", "Cucumber / BDD"] },
@@ -120,6 +121,7 @@ export const en = {
     kicker: "Things I built and tested",
     code: "Code",
     ci: "CI runs",
+    e2e: "E2E tests",
     featured: "Featured",
     quickpizza: {
       name: "QuickPizza test suite",
@@ -141,11 +143,12 @@ export const en = {
     ordenars: {
       name: "OrdenARS",
       tagline: "Android expense tracker in Kotlin",
-      body: "Offline Android app that records expenses automatically from the notifications of 24 Argentine banks and wallets, categorizes them and sends budget alerts. Jetpack Compose, MVVM + Clean Architecture, Room, Hilt and Flow.",
-      stats: [["50", "unit tests on CI"], ["3", "bugs caught by tests"], ["24", "banks & wallets parsed"]],
-      stack: ["Kotlin", "Jetpack Compose", "Room", "Hilt", "JUnit + MockK"],
+      body: "Offline Android app that records expenses automatically from the notifications of 24 Argentine banks and wallets, categorizes them and sends budget alerts. Jetpack Compose, MVVM + Clean Architecture, Room, Hilt and Flow. A separate **Appium + WebdriverIO** suite drives the real app on an emulator in CI, simulating bank notifications end to end.",
+      stats: [["50", "unit tests on CI"], ["9", "E2E tests on an emulator"], ["3", "bugs caught by tests"], ["24", "banks & wallets parsed"]],
+      stack: ["Kotlin", "Jetpack Compose", "Room", "Hilt", "JUnit + MockK", "Appium", "WebdriverIO"],
       imgAlt: "OrdenARS home screen showing monthly spending by category",
       repo: ordenarsRepo,
+      e2e: ordenarsE2eRepo,
     },
     more: [
       { name: "Cypress + GitHub Actions", body: "Cypress suite with Page Object Model for a calendar app, running on every push and PR with failure alerts.", stack: ["Cypress", "POM", "GitHub Actions"], url: "https://github.com/ErosCalvimonti/challenge-qa" },
@@ -265,6 +268,7 @@ export const es = {
     kicker: "Cosas que construí y testeé",
     code: "Código",
     ci: "Ejecuciones de CI",
+    e2e: "Tests E2E",
     featured: "Destacado",
     quickpizza: {
       name: "Suite de tests de QuickPizza",
@@ -286,11 +290,12 @@ export const es = {
     ordenars: {
       name: "OrdenARS",
       tagline: "App Android de gastos en Kotlin",
-      body: "App Android offline que registra gastos automáticamente desde las notificaciones de 24 bancos y billeteras argentinas, los categoriza y avisa cuando te acercás al presupuesto. Jetpack Compose, MVVM + Clean Architecture, Room, Hilt y Flow.",
-      stats: [["50", "tests unitarios en CI"], ["3", "bugs detectados por tests"], ["24", "bancos y billeteras"]],
-      stack: ["Kotlin", "Jetpack Compose", "Room", "Hilt", "JUnit + MockK"],
+      body: "App Android offline que registra gastos automáticamente desde las notificaciones de 24 bancos y billeteras argentinas, los categoriza y avisa cuando te acercás al presupuesto. Jetpack Compose, MVVM + Clean Architecture, Room, Hilt y Flow. Una suite aparte con **Appium + WebdriverIO** maneja la app real en un emulador en CI y simula notificaciones bancarias de punta a punta.",
+      stats: [["50", "tests unitarios en CI"], ["9", "tests E2E en emulador"], ["3", "bugs detectados por tests"], ["24", "bancos y billeteras"]],
+      stack: ["Kotlin", "Jetpack Compose", "Room", "Hilt", "JUnit + MockK", "Appium", "WebdriverIO"],
       imgAlt: "Pantalla de inicio de OrdenARS con el gasto del mes por categoría",
       repo: ordenarsRepo,
+      e2e: ordenarsE2eRepo,
     },
     more: [
       { name: "Cypress + GitHub Actions", body: "Suite de Cypress con Page Object Model para una app de calendario, corriendo en cada push y PR con alertas si falla.", stack: ["Cypress", "POM", "GitHub Actions"], url: "https://github.com/ErosCalvimonti/challenge-qa" },

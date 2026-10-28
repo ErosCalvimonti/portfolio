@@ -115,10 +115,10 @@ ${qp.findings.map((f) => `      <li><b>${f.id}</b><span class="sev">${f.sev}</sp
     <div>
       <p class="tag">${or.tagline}</p>
       <h3><a href="${or.repo}" ${ext}>${or.name}&nbsp;↗</a></h3>
-      <p>${or.body}</p>
+      <p>${md(or.body)}</p>
       <ul class="nums">${or.stats.map(([n, d]) => `<li><b>${n}</b>${d}</li>`).join("")}</ul>
       <ul class="chips">${or.stack.map((s) => `<li>${s}</li>`).join("")}</ul>
-      <p class="links"><a href="${or.repo}" ${ext}>${t.projects.code} ↗</a><a href="${or.repo}/actions" ${ext}>${t.projects.ci} ↗</a></p>
+      <p class="links"><a href="${or.repo}" ${ext}>${t.projects.code} ↗</a><a href="${or.repo}/actions" ${ext}>${t.projects.ci} ↗</a><a href="${or.e2e}" ${ext}>${t.projects.e2e} ↗</a></p>
     </div>
     <img src="${base}assets/ordenars.webp" width="360" height="800" loading="lazy" alt="${or.imgAlt}">
   </article>
