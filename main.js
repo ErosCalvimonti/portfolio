@@ -7,8 +7,7 @@
   if (!button) return;
 
   function current() {
-    if (root.dataset.theme) return root.dataset.theme;
-    return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+    return root.dataset.theme || "dark";
   }
 
   button.hidden = false;

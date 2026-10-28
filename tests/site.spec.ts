@@ -22,8 +22,8 @@ for (const p of pages) {
 
     test("has no accessibility violations (light and dark)", async ({ page }) => {
       for (const scheme of ["light", "dark"] as const) {
-        await page.emulateMedia({ colorScheme: scheme });
         await page.goto(p.path);
+        await page.evaluate((t) => (document.documentElement.dataset.theme = t), scheme);
         const results = await new AxeBuilder({ page })
           .withTags(["wcag2a", "wcag2aa", "wcag21a", "wcag21aa"])
           .analyze();
@@ -116,14 +116,15 @@ test("language switch links both versions", async ({ page }) => {
   await expect(page.locator("html")).toHaveAttribute("lang", "en");
 });
 
-test("theme toggle switches and persists", async ({ page }) => {
+test("dark theme is the default and the toggle persists light", async ({ page }) => {
   await page.emulateMedia({ colorScheme: "light" });
   await page.goto("/");
   const toggle = page.locator("button.theme");
-  await expect(toggle).toHaveAttribute("aria-pressed", "false");
-  await toggle.click();
-  await expect(page.locator("html")).toHaveAttribute("data-theme", "dark");
-  await page.reload();
-  await expect(page.locator("html")).toHaveAttribute("data-theme", "dark");
+  await expect(page.locator("body")).toHaveCSS("background-color", "rgb(22, 21, 19)");
   await expect(toggle).toHaveAttribute("aria-pressed", "true");
+  await toggle.click();
+  await expect(page.locator("html")).toHaveAttribute("data-theme", "light");
+  await page.reload();
+  await expect(page.locator("html")).toHaveAttribute("data-theme", "light");
+  await expect(toggle).toHaveAttribute("aria-pressed", "false");
 });
