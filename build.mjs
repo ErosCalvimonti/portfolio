@@ -34,7 +34,7 @@ function page(t) {
 <meta property="og:title" content="${t.title}">
 <meta property="og:description" content="${t.description}">
 <meta property="og:url" content="${canonical}">
-<meta property="og:image" content="${site.url}assets/og-v2.png">
+<meta property="og:image" content="${site.url}assets/og-dark.png">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#161513">
 <link rel="icon" href="${base}assets/favicon.svg" type="image/svg+xml">
